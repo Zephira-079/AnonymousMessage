@@ -1,0 +1,5 @@
+.vscode
+.replit
+replit.nix
+cacert.pem
+config.json
