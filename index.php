@@ -1,5 +1,4 @@
 <?php
-    require_once "./php/config.php";
     header("X-Frame-Options: SAMEORIGIN");
 ?>
 
@@ -13,14 +12,14 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Anonymouse Message @<?php echo get("author");?>">
-    <meta property="og:description" content="Feel free to drop me a message if you'd like to chat or make a new friend. <?php echo get("author");?>">
+    <meta property="og:title" content="Anonymouse Message">
+    <meta property="og:description" content="Feel free to drop me a message if you'd like to chat or make a new friend.">
     <meta property="og:image" content="./favicon/banner.png">
-    
+
     <!-- Twitter Card Meta Tags (optional) -->
-    <meta name="twitter:card" content="Anonymouse Message @<?php echo get("author");?>">
-    <meta name="twitter:title" content="Anonymouse Message @<?php echo get("author");?>">
-    <meta name="twitter:description" content="Feel free to drop me a message if you'd like to chat or make a new friend. <?php echo get("author");?>">
+    <meta name="twitter:card" content="Anonymouse Message">
+    <meta name="twitter:title" content="Anonymouse Message">
+    <meta name="twitter:description" content="Feel free to drop me a message if you'd like to chat or make a new friend.">
     <meta name="twitter:image" content="./favicon/banner.png">
 
     <!-- Favicon -->
@@ -36,9 +35,7 @@
         </h1>
         <div class="user">
             <span>
-                <?php
-                    echo "@".get("author");
-                ?>
+                <!-- put author_name here in php in future update -->
             </span>
         </div>
         <form action="php/main.php" method="post" enctype="multipart/form-data">
